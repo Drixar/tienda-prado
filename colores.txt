@@ -1,0 +1,16 @@
+
+verde
+#94cc44
+rgb(148, 204, 68)
+
+verde oscuro
+#64a33c
+rgb(100, 163, 60)
+
+marron
+#64544c
+rgb(100, 84, 76)
+
+Marron oscuro
+#2c2c2c
+rgb(44, 44, 44)

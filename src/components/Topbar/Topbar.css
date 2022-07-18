@@ -1,0 +1,48 @@
+.topBar{
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand {
+    margin-left: 1rem;
+    width: 12rem;
+}
+
+.brandText {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(148, 204, 68);
+    margin-bottom: 0;
+}
+
+.brandLogo{
+    padding: .25rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.pageTitle {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(100, 84, 76);
+    width: 12rem;
+}
+
+.titleText{
+    margin-bottom: 0;
+}
+.cartWidget {
+    width: 12rem;
+}
+
+.otroDiv {
+    width: 12rem;
+}
