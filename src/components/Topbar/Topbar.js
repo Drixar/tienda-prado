@@ -1,5 +1,6 @@
 import "./Topbar.css";
 import React from "react";
+import CartWidget  from "../CartWidget/CartWidget";
 
 const Topbar = () => {
   return (
@@ -11,7 +12,8 @@ const Topbar = () => {
       <div className="pageTitle">
         <p className="titleText">Tienda de Té</p>
       </div>
-      <div className="otroDiv">
+      <div className="cartWidget">
+        <CartWidget />
       </div>
     </div>
   );
