@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Topbar from './components/Topbar/Topbar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+// import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemListCounter from './components/ItemListCounter/ItemListCounter';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <Topbar />
       <Navbar />
-      <ItemListContainer texto='Listado de Productos'/>
+      <ItemListCounter texto='Listado de Productos'/>
     </div>
   );
 }
