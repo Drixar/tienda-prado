@@ -1,0 +1,107 @@
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 800px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .5s;
+  }
+  
+  /* .container:hover .card{
+      filter: blur(20px);
+      transform: scale(0.9);
+      opacity: 0.5  ;
+  
+  } */
+  
+  .card:hover{
+      /* filter: blur(0px); */
+      box-shadow: 0 5px 15px #000;
+      /* transform: translateY(-15px);
+      transform: scale(1.1);
+      opacity: 1; */
+  
+  }
+  
+  .card .head {
+    height: 125px;
+    width: 125px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .card .head .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(100, 84, 76);
+    top: -99.5%;
+  }
+  
+  .card .head .img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 68%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .card .img img.top:hover {
+      opacity: 0;
+    }
+  
+.cardTitle{
+    margin-top: 5rem;
+    height: 5rem;
+}
+  
+  .card .description {
+    height: 300px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, 0.18);
+    text-align: center;
+  }
+  
+
+  .card .description h3 {
+    margin: 25px;
+    color: #000;
+  }
+  
+  .card .textDescription {
+    height: 300px;
+  }
+  .card .description p{
+      margin-top: 15px;
+      font-size: 15px;
+  }
+  
+  button {
+    width: 7rem;
+    margin: 1rem 0 1rem 0;
+    color: rgb(148, 204, 68);
+    background-color: rgb(100, 84, 76);
+    border-radius: .5rem;
+    border-color: transparent;
+}
+
+button:hover {
+    color: rgb(44, 44, 44);
+    background-color: rgb(148, 204, 68);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+}

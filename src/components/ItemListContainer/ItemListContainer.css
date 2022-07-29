@@ -1,0 +1,18 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(100, 163, 60), rgb(44, 44, 44));
+    background-attachment: fixed;
+    flex-wrap: wrap;
+  }
+
+  .listTitle {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(100, 84, 76);
+
+}

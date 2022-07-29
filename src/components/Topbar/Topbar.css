@@ -10,22 +10,23 @@
 }
 .brand {
     margin-left: 1rem;
+    display: flex;
+    font-size: 2rem;
     width: 12rem;
+    color: rgb(148, 204, 68);
 }
 
 .brandText {
-    font-size: 2rem;
     display: inline-block;
-    vertical-align: middle;
-    color: rgb(148, 204, 68);
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .brandLogo{
-    padding: .25rem;
     display: inline-block;
     width: 3rem;
     height: 3rem;
+    margin-right: 1rem;
 }
 
 .pageTitle {
@@ -37,7 +38,8 @@
 }
 
 .titleText{
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 .cartWidget {
     width: 12rem;
