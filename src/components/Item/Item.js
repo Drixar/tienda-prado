@@ -1,6 +1,4 @@
 import './Item.css'
-import Modal from '../Modal/Modal';
-import { useState } from 'react';
 
 
 const Item = ({ product }) => { 
