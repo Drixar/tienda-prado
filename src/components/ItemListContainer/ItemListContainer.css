@@ -11,8 +11,8 @@
 
   .listTitle {
     font-size: 2rem;
-    display: inline-block;
     vertical-align: middle;
     color: rgb(100, 84, 76);
+    text-align: center;
 
 }

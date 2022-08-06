@@ -1,0 +1,65 @@
+.detailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  background: linear-gradient(45deg, rgb(100, 163, 60), rgb(44, 44, 44));
+  background-attachment: fixed;
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 40rem;
+  /* height: 40rem; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.head {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+}
+
+.head .img img {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(100, 84, 76);
+  padding: 5px;
+  border-radius: 50%;
+  transition: opacity 0.5s ease-in-out;
+  align-self: center;
+}
+
+.img img.top:hover {
+  opacity: 0;
+}
+
+.textDescription {
+  margin-top: 2rem;
+  /* height: 300px; */
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+}
+
+.itemTitle,
+.prizeText {
+  font-size: 2rem;
+  display: block;
+  background-color: rgb(100, 84, 76);
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  padding: .5rem 2rem;
+  width: 100%;
+}

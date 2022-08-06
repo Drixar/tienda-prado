@@ -2,12 +2,13 @@
 .card {
     position: relative;
     width: 300px;
-    height: 800px;
+    height: 400px;
     margin: 20px;
     background-color: #fff;
     border-radius: 1rem;
     overflow: hidden;
     transition: .5s;
+    text-align: center;
   }
   
   /* .container:hover .card{
@@ -86,21 +87,24 @@
       font-size: 15px;
   }
   
-  button {
+  .Option {
     width: 7rem;
+    padding-top: .5rem;
+    text-decoration: none;
     margin: 1rem 0 1rem 0;
     color: rgb(148, 204, 68);
     background-color: rgb(100, 84, 76);
     border-radius: .5rem;
     border-color: transparent;
+    text-align: center;
 }
 
-button:hover {
+.Option:hover {
     color: rgb(44, 44, 44);
     background-color: rgb(148, 204, 68);
 }
 
-.contact {
+.footer {
     display: flex;
     justify-content: space-evenly;
     height: 10vh;

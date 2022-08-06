@@ -1,6 +1,6 @@
 import './Navbar.css'
 import React from 'react'
-// import button from '../button/button'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -12,10 +12,12 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="Navbar">
-                <button>Infusiones</button>
-                <button>Vajilla</button>
-                <button>Accesorios</button>
+        <nav className='Navbar'>
+            <div className="Categories">
+                <Link to='/category/Infusiones' className="Option">Infusiones</Link>
+                <Link to='/category/Vajilla' className="Option">Vajilla</Link>
+                <Link to='/category/Accesorios' className="Option">Accesorios</Link>
+            </div>
         </nav>
     )
 }
