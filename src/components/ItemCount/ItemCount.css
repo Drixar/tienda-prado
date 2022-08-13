@@ -1,0 +1,43 @@
+.botonera {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+}
+.AddButton{
+    width: 10rem;
+    padding-top: .5rem;
+    text-decoration: none;
+    margin: 1rem 0 1rem 0;
+    color: rgb(148, 204, 68);
+    background-color: rgb(100, 84, 76);
+    border-radius: .5rem;
+    border-color: transparent;
+    text-align: center;
+}
+.Button {
+    width: 7rem;
+    padding-top: .5rem;
+    text-decoration: none;
+    margin: 1rem 0 1rem 0;
+    color: rgb(148, 204, 68);
+    background-color: rgb(100, 84, 76);
+    border-radius: .5rem;
+    border-color: transparent;
+    text-align: center;
+}
+.Number{
+    width: 7rem;
+    padding-top: .5rem;
+    text-decoration: none;
+    margin: 1rem 0 1rem 0;
+    color: rgb(100, 84, 76);
+    background-color: white;
+    border-radius: .5rem;
+    border-color: transparent;
+    text-align: center;
+}
+.Button:hover {
+    color: rgb(44, 44, 44);
+    background-color: rgb(148, 204, 68);
+}
+
