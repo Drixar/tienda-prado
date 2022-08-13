@@ -10,15 +10,15 @@ export const CartContextProvider = ({ children }) => {
         if(!isInCart(productToAdd.id)) {
             setCart([...cart, productToAdd])
         } else {
-            const cartUpdated = cart.map(prod => {
-                if(prod.id === productToAdd.id) {
+            const cartUpdated = cart.map(product => {
+                if(product.id === productToAdd.id) {
                     const productUpdated = {
-                        ...prod,
+                        ...product,
                         quantity: productToAdd.quantity
                     }
                     return productUpdated
                 } else {
-                    return prod
+                    return product
                 }
             })
 
@@ -31,26 +31,26 @@ export const CartContextProvider = ({ children }) => {
     }
 
     const removeItem = (id) => {
-        const newCartWithoutProduct = cart.filter(prod => prod.id !== id)
+        const newCartWithoutProduct = cart.filter(product => product.id !== id)
         setCart(newCartWithoutProduct)
     }
 
     const isInCart = (id) => {
-        return cart.some(prod => prod.id === id)
+        return cart.some(product => product.id === id)
     }
 
     const getQuantity = () => {
-        let accu = 0
+        let totalQuantity = 0
 
-        cart.forEach(prod => {
-        accu += prod.quantity
+        cart.forEach(product => {
+        totalQuantity += product.quantity
         })
 
-        return accu
+        return totalQuantity
     }
 
     const getProductQuantity = (id) => {
-        const product = cart.find(prod => prod.id === id)
+        const product = cart.find(product => product.id === id)
 
         return product?.quantity
     }
