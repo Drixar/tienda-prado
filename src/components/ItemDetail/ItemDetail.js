@@ -11,11 +11,15 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
 
   const handleOnAdd = (quantity) => {
     setQuantityToAdd(quantity);
+    console.log('cuando agregamos el producto el stock es ' + stock)
 
     const productToAdd = {
       id,
-      name,
+      name, 
+      img1, 
+      img2,
       price,
+      stock,
       quantity,
     };
 
@@ -23,6 +27,7 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
   };
 
   const productQuantity = getProductQuantity(id);
+  console.log("cant en el carrito " + productQuantity)
   if (name) {
     console.log("cargado");
     return (

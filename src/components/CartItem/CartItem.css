@@ -1,0 +1,115 @@
+
+.cartItem {
+    position: relative;
+    width: 80vw;
+    height: 4rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .5s;
+
+    display: flex;
+    justify-items: center;
+  }
+  
+  /* .container:hover .card{
+      filter: blur(20px);
+      transform: scale(0.9);
+      opacity: 0.5  ;
+  
+  } */
+  
+  .cartItem:hover{
+      /* filter: blur(0px); */
+      box-shadow: 0 5px 15px #000;
+      /* transform: translateY(-15px);
+      transform: scale(1.1);
+      opacity: 1; */
+  
+  }
+  
+  .cartItem .cartHead {
+    /* height: 125px;
+    width: 125px; */
+    width: 6rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cartItem .cartHead .cartCircle {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: rgb(100, 84, 76);
+    top: -1rem;
+    left: -1rem;
+  }
+  
+  .cartItem .cartHead .cartImg img {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    left: .5rem;
+    top: .15rem;
+    
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .cartItem .cartImg img.cartTop:hover {
+      opacity: 0;
+    }
+  
+.cartTitle {
+    height: 2rem;
+    width: 30rem;
+    justify-content: start;
+}
+.cartPrice{
+  height: 2rem;
+}
+
+  
+
+  .card .description h3 {
+    margin: 25px;
+    color: #000;
+  }
+  
+  .card .textDescription {
+    height: 300px;
+  }
+  .card .description p{
+      margin-top: 15px;
+      font-size: 15px;
+  }
+  
+  .Option {
+    width: 7rem;
+    padding-top: .5rem;
+    text-decoration: none;
+    margin: 1rem 0 1rem 0;
+    color: rgb(148, 204, 68);
+    background-color: rgb(100, 84, 76);
+    border-radius: .5rem;
+    border-color: transparent;
+    text-align: center;
+}
+
+.Option:hover {
+    color: rgb(44, 44, 44);
+    background-color: rgb(148, 204, 68);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+}

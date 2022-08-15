@@ -7,11 +7,10 @@ const CartWidget = () => {
   const { getQuantity } = useContext(CartContext);
 
   const quantity = getQuantity();
+  if (quantity === 0) {
+    return
+  }
   return (
-    // <div className="cartWidget">
-    //   <img src="../images/shoppingcart.svg" className="cartImg" alt="CartWidget" />
-    //   <p className="cartText">{ quantity }</p>
-    // </div>
     <Link to="/cart" className="CartWidget">
       <img
         src="../images/shoppingcart.svg"
