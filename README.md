@@ -40,3 +40,7 @@ Accesorios
 Siendo productId el código de identificación del producto
 
 
+## http://localhost:3000/cart  `ejecuta el Cart`
+Siempre y cuando se hayan agregado elementos al carrito de compras.
+En caso que el carrito de compras esté vacío, se `ejecuta el itemListContainer` 
+
