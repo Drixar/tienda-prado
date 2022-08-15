@@ -36,7 +36,7 @@ const CartCount = ({ id }) => {
         <button className="cartButton" onClick={decrement}>
           -
         </button>
-        <p className="cartNumber">{product.quantity}</p>
+        <p className="cartNumber">{product.quantity} unidades</p>
         <button className="cartButton" onClick={increment}>
           +
         </button>

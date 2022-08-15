@@ -3,6 +3,7 @@ import CartContext from "../CartContext/CartContext";
 import { useContext } from 'react';
 import CartItem from '../CartItem/CartItem';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import CartTotal from '../CartTotal/CartTotal';
 
 const Cart = () => {
     const shoppingCart = useContext(CartContext).cart;
@@ -17,8 +18,10 @@ const Cart = () => {
         <>
         <h1 className='CartTitle'>Carrito de Compras</h1>
         <div className='Cart'>
-            {/* <h1>Pagina en Construcción</h1> */}
+            
             {shoppingCart.map(prod => <CartItem key={prod.id} {...prod}/>)}
+            <CartTotal />
+
         </div>
         </>
     )

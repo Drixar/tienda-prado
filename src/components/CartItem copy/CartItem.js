@@ -1,6 +1,6 @@
 import "./CartItem.css";
 import CartCount from "../CartCount/CartCount";
-import TrashWidget from "../TrashWidget/TrashWidget";
+import TrashWidget from "../TrashTotal/TrashWidget";
 
 const CartItem = ({ id, name, img1, img2, price, stock, quantity }) => {
   console.log("este es el stock que recibe Cart Item" + stock);

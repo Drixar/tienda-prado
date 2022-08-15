@@ -80,32 +80,21 @@
 
   
 
-  .card .description h3 {
-    margin: 25px;
-    color: #000;
-  }
+
   
-  .card .textDescription {
-    height: 300px;
-  }
-  .card .description p{
-      margin-top: 15px;
-      font-size: 15px;
-  }
-  
-  .Option {
-    width: 7rem;
-    padding-top: .5rem;
+  .order button {
+    width: 10.5rem;
+    height: 2rem;
     text-decoration: none;
-    margin: 1rem 0 1rem 0;
     color: rgb(148, 204, 68);
     background-color: rgb(100, 84, 76);
     border-radius: .5rem;
     border-color: transparent;
     text-align: center;
+    margin : 1rem 2rem;
 }
 
-.Option:hover {
+.order:hover button{
     color: rgb(44, 44, 44);
     background-color: rgb(148, 204, 68);
 }
