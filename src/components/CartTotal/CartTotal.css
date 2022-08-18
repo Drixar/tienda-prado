@@ -13,15 +13,7 @@
     justify-items: center;
   }
   
-  /* .container:hover .card{
-      filter: blur(20px);
-      transform: scale(0.9);
-      opacity: 0.5  ;
-  
-  } */
-  
-  .cartItem:hover{
-      /* filter: blur(0px); */
+.cartItem:hover{
       box-shadow: 0 5px 15px #000;
       /* transform: translateY(-15px);
       transform: scale(1.1);
@@ -72,15 +64,12 @@
     width: 30rem;
     justify-content: start;
 }
+
 .cartPrice{
   height: 2rem;
   width: 10rem;
   justify-content: right;
 }
-
-  
-
-
   
   .order button {
     width: 10.5rem;

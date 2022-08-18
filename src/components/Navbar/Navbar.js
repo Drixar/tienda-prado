@@ -5,12 +5,6 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-    // const text = 'hice click'
-
-    // const handleClick = () => {
-    //     console.log(text)
-    // }
-
     return (
         <nav className='Navbar'>
             <div className="Categories">

@@ -8,10 +8,7 @@ import CartTotal from '../CartTotal/CartTotal';
 const Cart = () => {
     const shoppingCart = useContext(CartContext).cart;
     const { getQuantity } = useContext(CartContext);
-
-    console.log("contenido del carrito "+ typeof shoppingCart)
     if (getQuantity() === 0){
-        console.log("el carrito está vacio "+shoppingCart)
         return (<ItemListContainer texto='Listado de Productos'/>)
     }
     return (

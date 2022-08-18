@@ -5,7 +5,6 @@ import { useContext } from "react";
 
 const TrashTotal = ({ id }) => {
   const { clearCart } = useContext(CartContext);
-console.log('ID que recibe trashwidget' + id)
   return (
     <button onClick={() => clearCart()} className="TrashWidget">
       <img

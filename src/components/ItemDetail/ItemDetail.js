@@ -11,8 +11,6 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
 
   const handleOnAdd = (quantity) => {
     setQuantityToAdd(quantity);
-    console.log('cuando agregamos el producto el stock es ' + stock)
-
     const productToAdd = {
       id,
       name, 
@@ -27,9 +25,8 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
   };
 
   const productQuantity = getProductQuantity(id);
-  console.log("cant en el carrito " + productQuantity)
+
   if (name) {
-    console.log("cargado");
     return (
       <div className={`detailContainer`}>
         <div className="detail">
@@ -61,7 +58,6 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
       </div>
     );
   } else {
-    console.log("todavía no");
     return (
       <div className={`detailContainer`}>
         <h1>Cargando...</h1>

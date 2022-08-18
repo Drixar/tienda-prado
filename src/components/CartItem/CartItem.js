@@ -3,8 +3,6 @@ import CartCount from "../CartCount/CartCount";
 import TrashWidget from "../TrashWidget/TrashWidget";
 
 const CartItem = ({ id, name, img1, img2, price, stock, quantity }) => {
-  console.log("este es el stock que recibe Cart Item" + stock);
-  console.log('ID del producto del cartItem: '+id)
   return (
     <div className="cartItem">
       <div className="cartHead">
