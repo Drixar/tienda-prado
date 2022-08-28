@@ -2,18 +2,15 @@ import "./CartTotal.css";
 import { useContext } from "react";
 import TrashTotal from "../TrashTotal/TrashTotal";
 import CartContext from "../CartContext/CartContext";
+import { Link } from "react-router-dom";
 
 const CartTotal = ({ id, name, img1, img2, price, stock, quantity }) => {
   const { getTotalPrice } = useContext(CartContext);
-  // const totalPriceToPay = getTotalPtice();
+
   return (
     <div className="cartItem">
       <div className="cartHead">
         <div className="cartCircle"></div>
-        {/* <div className="cartImg">
-          <img src={img2} alt={name} />
-          <img className="cartTop" src={img1} alt="" />
-        </div> */}
       </div>
       <div className="cartTitle">
         <p> </p>
@@ -23,18 +20,17 @@ const CartTotal = ({ id, name, img1, img2, price, stock, quantity }) => {
       </div>
 
       <div className="cartPrice">
-        <p>Total:    $ { getTotalPrice() }</p>
+        <p>Total: $ {getTotalPrice()}</p>
       </div>
 
-      <div className="cartCount">
-
-      </div>
+      <div className="cartCount"></div>
 
       <div className="order">
-        <button> Orden de Compra</button>
+        <Link to="/checkout"  className="orderButton">
+          Finalizar compra
+        </Link>
       </div>
       <TrashTotal />
-
     </div>
   );
 };

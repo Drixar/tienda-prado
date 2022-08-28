@@ -1,3 +1,26 @@
+.Checkout {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(100, 163, 60), rgb(44, 44, 44));
+    background-attachment: fixed;
+    flex-wrap: wrap;
+  }
+
+  .CheckoutTitle {
+    font-size: 2rem;
+    vertical-align: middle;
+    color: rgb(100, 84, 76);
+    text-align: center;
+
+}
+
+.userForm {
+    background-color: transparent;
+}
+
 
 .cartItem {
     position: relative;
@@ -8,9 +31,9 @@
     border-radius: 1rem;
     overflow: hidden;
     transition: .5s;
-
     display: flex;
     justify-items: center;
+    
   }
   
 .cartItem:hover{
@@ -69,30 +92,42 @@
   height: 2rem;
   width: 10rem;
   justify-content: right;
-}
-
-.orderButton {
-  width: 10.5rem;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  height: 1.5rem;
-justify-content: center;
-  text-decoration: none;
-  margin: 1rem 2rem;
-  color: rgb(148, 204, 68);
-  background-color: rgb(100, 84, 76);
-  border-radius: .5rem;
-  border-color: transparent;
-  text-align: center;
-}
-
-.orderButton:hover {
-  color: rgb(44, 44, 44);
-  background-color: rgb(148, 204, 68);
-}
-
-.order {
-  display: flex;
-  justify-content: space-evenly;
 
 }
+
+label {
+    align-self: center;
+}
+
+.cartInput{
+    align-self: center;
+    height: 2rem;
+    width: 20rem;
+    justify-content: right;
+  }
+
+  .orderButton {
+    width: 10.5rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    height: 2rem;
+  justify-content: center;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    color: rgb(148, 204, 68);
+    background-color: rgb(100, 84, 76);
+    border-radius: .5rem;
+    border-color: transparent;
+    text-align: center;
+  }
+  
+  .orderButton:hover {
+    color: rgb(44, 44, 44);
+    background-color: rgb(148, 204, 68);
+  }
+  
+  .order {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }

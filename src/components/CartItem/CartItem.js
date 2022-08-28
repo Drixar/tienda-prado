@@ -1,15 +1,16 @@
 import "./CartItem.css";
 import CartCount from "../CartCount/CartCount";
 import TrashWidget from "../TrashWidget/TrashWidget";
+import { Getimg } from "../Files/Files";
 
-const CartItem = ({ id, name, img1, img2, price, stock, quantity }) => {
+const CartItem = ({ id, name, img, price, stock, quantity }) => {
   return (
     <div className="cartItem">
       <div className="cartHead">
         <div className="cartCircle"></div>
         <div className="cartImg">
-          <img src={img2} alt={name} />
-          <img className="cartTop" src={img1} alt="" />
+          <img src={Getimg(img[1])} alt={name} />
+              <img className="top" src={Getimg(img[0])} alt="" />
         </div>
       </div>
       <div className="cartTitle">

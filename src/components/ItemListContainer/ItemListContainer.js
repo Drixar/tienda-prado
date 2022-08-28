@@ -15,8 +15,8 @@ const ItemListContainer = ({ texto }) => {
     setLoading(true);
 
     const fullCollection = !categoryId 
-        ? collection(db, 'products') 
-        : query(collection(db, 'products'), where('category', '==', categoryId) ) 
+        ? collection(db, 'prods') 
+        : query(collection(db, 'prods'), where('category', '==', categoryId) ) 
 
     getDocs(fullCollection).then(response => {
         const productsAdapted = response.docs.map (doc => {

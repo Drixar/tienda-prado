@@ -3,10 +3,10 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 import CartContext from "../CartContext/CartContext";
+import { Getimg } from "../Files/Files";
 
-const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
+const ItemDetail = ({ id, name, img, description, price, stock }) => {
   const [quantityToAdd, setQuantityToAdd] = useState(0);
-
   const { addItem, getProductQuantity } = useContext(CartContext);
 
   const handleOnAdd = (quantity) => {
@@ -14,8 +14,7 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
     const productToAdd = {
       id,
       name, 
-      img1, 
-      img2,
+      img,
       price,
       stock,
       quantity,
@@ -33,8 +32,8 @@ const ItemDetail = ({ id, name, img1, img2, description, price, stock }) => {
           <h1 className="itemTitle">{name}</h1>
           <div className="head">
             <div className="img">
-              <img src={img2} alt={name} />
-              <img className="top" src={img1} alt="" />
+              <img src={Getimg(img[1])} alt={name} />
+              <img className="top" src={Getimg(img[0])} alt="" />
             </div>
           </div>
           <p className="textDescription">{description}</p>

@@ -86,7 +86,7 @@
   text-align: center;
 }
 
-.Button:hover {
+.detailButton:hover {
   color: rgb(44, 44, 44);
   background-color: rgb(148, 204, 68);
 }

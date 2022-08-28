@@ -1,8 +1,9 @@
 import './Item.css'
 import { Link } from 'react-router-dom'
+import { Getimg } from '../Files/Files';
 
 
-const Item = ({id, name, img1, img2 }) => {
+const Item = ({id, name, img }) => {
   
 
   return (
@@ -13,8 +14,8 @@ const Item = ({id, name, img1, img2 }) => {
         <div className="head">
           <div className="circle"></div>
           <div className="img">
-            <img src={img2} alt={name} />
-            <img className="top" src={img1} alt="" />
+            <img src={Getimg(img[1])} alt={name} />
+              <img className="top" src={Getimg(img[0])} alt="" />
           </div>
         </div>
         <div className='cardTitle'>
