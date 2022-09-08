@@ -1,7 +1,7 @@
 import "./Topbar.css";
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
@@ -9,11 +9,15 @@ const Topbar = () => {
       <div className="brand">
         <Link to="/">
           <img src="../images/logo32.png" className="brandLogo" alt="Logo" />
-          <p className="brandText">Prana</p>
+        </Link>
+        <Link to="/" className="pageTitle" style={{ textDecoration: "none" }}>
+          <p className="titleText">Prana</p>
         </Link>
       </div>
-      <div className="pageTitle">
-        <p className="titleText">Tienda de Té</p>
+      <div className="brand">
+        <Link to="/" className="pageTitle" style={{ textDecoration: "none" }}>
+          <p className="titleText">Tienda de Té</p>
+        </Link>
       </div>
       <div className="cartWidget">
         <CartWidget />

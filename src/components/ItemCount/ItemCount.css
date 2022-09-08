@@ -13,6 +13,7 @@
     border-radius: .5rem;
     border-color: transparent;
     text-align: center;
+    font-weight: 300;
 }
 .Button {
     width: 7rem;
@@ -35,6 +36,7 @@
     border-radius: .5rem;
     border-color: transparent;
     text-align: center;
+    font-weight: 300;
 }
 .Button:hover {
     color: rgb(44, 44, 44);

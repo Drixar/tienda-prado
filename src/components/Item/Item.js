@@ -19,7 +19,7 @@ const Item = ({id, name, img }) => {
           </div>
         </div>
         <div className='cardTitle'>
-          <h3>{name}</h3>
+          <p>{name}</p>
         </div>
 
         <div className="footer">

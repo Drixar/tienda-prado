@@ -8,7 +8,6 @@
     border-radius: 1rem;
     overflow: hidden;
     transition: .5s;
-
     display: flex;
     justify-items: center;
   }
@@ -58,7 +57,7 @@
     padding: 5px;
     border-radius: 50%;
     left: .5rem;
-    top: .15rem;
+    top: .25rem;
     
     transition: opacity 0.5s ease-in-out;
   }
@@ -93,22 +92,6 @@
       font-size: 15px;
   }
   
-  .Option {
-    width: 7rem;
-    padding-top: .5rem;
-    text-decoration: none;
-    margin: 1rem 0 1rem 0;
-    color: rgb(148, 204, 68);
-    background-color: rgb(100, 84, 76);
-    border-radius: .5rem;
-    border-color: transparent;
-    text-align: center;
-}
-
-.Option:hover {
-    color: rgb(44, 44, 44);
-    background-color: rgb(148, 204, 68);
-}
 
 .footer {
     display: flex;

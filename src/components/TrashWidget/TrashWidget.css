@@ -1,8 +1,8 @@
 
 .TrashWidget {
     margin: 1rem;
-    height: 2rem;
-    width: 2rem;
+    height: 2.25rem;
+    width: 2.25rem;
     background-color: rgb(100, 84, 76);
     border-radius: .5rem;
     border-color: transparent;
@@ -12,7 +12,6 @@
 }
 
 .trashtImg {
-
-    height: 1.5rem;
+    height: 1.75rem;
 }
 

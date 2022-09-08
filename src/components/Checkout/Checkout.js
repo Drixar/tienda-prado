@@ -5,17 +5,14 @@ import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import {
   collection,
   addDoc,
-  doc,
-  setDoc,
   getDocs,
   query,
   where,
   documentId,
-  updateDoc,
   writeBatch,
 } from "firebase/firestore";
 import { db } from "../../services/firebase";
-import { async } from "@firebase/util";
+
 
 const Checkout = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -25,10 +22,16 @@ const Checkout = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  let orderItems = [];
+  
+
 
   const createOrder = async () => {
     setIsLoading(true)
     try {
+      cart.forEach((orderItem)=> {
+        orderItems.push({id: orderItem.id, title: orderItem.name, price: orderItem.price, quantity: orderItem.quantity})
+      })
       if (name && email && phone) {
         const objOrder = {
           buyer: {
@@ -36,7 +39,7 @@ const Checkout = () => {
             phone: phone,
             email: email,
           },
-          items: cart,
+          items: orderItems,
           totalQuantity,
           total,
           date: new Date(),
@@ -172,7 +175,7 @@ const Checkout = () => {
           <div className="cartCount"></div>
 
           <div className="order">
-            <button className="orderButton" onClick={createOrder}>
+            <button className="checkoutButton" onClick={createOrder}>
               Generar Orden
             </button>
           </div>

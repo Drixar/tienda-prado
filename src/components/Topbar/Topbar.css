@@ -14,13 +14,10 @@
     font-size: 2rem;
     width: 12rem;
     color: rgb(148, 204, 68);
+    text-decoration: none;
+    height: 3rem;
 }
 
-.brandText {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
 
 .brandLogo{
     display: inline-block;
@@ -37,9 +34,16 @@
     width: 12rem;
 }
 
-.titleText{
+.titleText,
+.titleText:link,
+.titleText:visited,
+.titleText:active,
+.titleText:hover {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    font-weight: 300;
+
 }
 .cartWidget {
     width: 12rem;
@@ -48,3 +52,5 @@
 .otroDiv {
     width: 12rem;
 }
+
+Link:link { text-decoration: none; }
