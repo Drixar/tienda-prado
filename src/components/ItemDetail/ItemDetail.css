@@ -1,37 +1,40 @@
 .detailContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   min-height: 100vh;
   background: linear-gradient(45deg, rgb(100, 163, 60), rgb(44, 44, 44));
   background-attachment: fixed;
   flex-wrap: wrap;
+
 }
 
 .detail {
   width: 40rem;
-  /* height: 40rem; */
+  margin-top: 1rem;
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   border-radius: 1rem;
   overflow: hidden;
 }
 
 .head {
-  width: 10rem;
+  /* width: 10rem; */
   height: 10rem;
   position: relative;
   justify-content: center;
   margin: 0;
+  flex-direction: row;
 }
 
 .head .img img {
   position: absolute;
-  width: 10rem;
-  height: 10rem;
+  width: 6rem;
+  height: 6rem;
+  margin: .5rem;
   border-radius: 50%;
   object-fit: cover;
   background-color: rgb(100, 84, 76);
@@ -46,12 +49,12 @@
 }
 
 .textDescription {
-  margin-top: 2rem;
-  /* height: 300px; */
-  padding: 40px 20px 20px 20px;
+  position: relative;
   text-align: center;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-left: 7.5rem;
+  padding-right: 1rem;
 }
 
 .itemTitle,
@@ -61,8 +64,9 @@
   background-color: rgb(100, 84, 76);
   color: white;
   text-align: center;
-  font-weight: 400;
-  padding: .5rem 2rem;
+  font-weight: 300;
+  margin: 0;
+
   width: 100%;
   font-weight: 300;
 }

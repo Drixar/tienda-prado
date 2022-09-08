@@ -35,8 +35,10 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
               <img src={Getimg(img[1])} alt={name} />
               <img className="top" src={Getimg(img[0])} alt="" />
             </div>
+            <div>
+            <p className="textDescription">{description}</p>
+            </div>
           </div>
-          <p className="textDescription">{description}</p>
           <h1 className="prizeText">Precio: $ {price}</h1>
           <div className="ItemFooter">
             {quantityToAdd === 0 ? (

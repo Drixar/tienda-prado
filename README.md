@@ -44,3 +44,8 @@ Siendo productId el código de identificación del producto
 Siempre y cuando se hayan agregado elementos al carrito de compras.
 En caso que el carrito de compras esté vacío, se `ejecuta el itemListContainer` 
 
+## http://localhost:3000/checkout  `ejecuta el Checkout`
+Presenta el formulario para que se completen los datos del comprador.
+En caso que el carrito de compras esté vacío, se `ejecuta el itemListContainer` 
+
+Cuando se presiona el Botón "Generar Orden", la Orden se Genra, se graba en la base de datos y le informa el códico al cliente por pantalla.
